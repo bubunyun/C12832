@@ -103,7 +103,7 @@ void C12832::lcd_reset()
     _reset = 0;                        // display reset
     wait_us(50);
     _reset = 1;                       // end reset
-    wait_ms(5);
+    wait_us(5000);
 
     /* Start Initial Sequence ----------------------------------------------------*/
 
